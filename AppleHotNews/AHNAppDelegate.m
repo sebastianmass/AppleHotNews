@@ -7,15 +7,30 @@
 //
 
 #import "AHNAppDelegate.h"
+#import "AHNNewsListViewController.h"
 
 @implementation AHNAppDelegate
+@synthesize window;
+
+#warning I didn't find appropriate way to test app on iOS 6 cause Yosemite doens't support simulators with version lower than 7. But everything should work. In theory :) If no - give me a sign, I will fix.
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    AHNNewsListViewController *nlVC = [[AHNNewsListViewController alloc] init];
+    
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:nlVC];
+    
+    [nlVC release];
+
+    self.window.rootViewController = navVC;
+    
+    [navVC release];
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

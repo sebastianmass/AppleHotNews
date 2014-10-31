@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0669BB4D1A03CACF00DBFFAE /* AHNWebViewNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0669BB4C1A03CACF00DBFFAE /* AHNWebViewNewsViewController.m */; };
 		069FAB3E19F9B481005AA98C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069FAB3D19F9B481005AA98C /* Foundation.framework */; };
 		069FAB4019F9B481005AA98C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069FAB3F19F9B481005AA98C /* CoreGraphics.framework */; };
 		069FAB4219F9B481005AA98C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069FAB4119F9B481005AA98C /* UIKit.framework */; };
@@ -19,6 +20,10 @@
 		069FAB5919F9B481005AA98C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069FAB4119F9B481005AA98C /* UIKit.framework */; };
 		069FAB6119F9B481005AA98C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 069FAB5F19F9B481005AA98C /* InfoPlist.strings */; };
 		069FAB6319F9B481005AA98C /* AppleHotNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 069FAB6219F9B481005AA98C /* AppleHotNewsTests.m */; };
+		069FAB6E19F9B8DB005AA98C /* AHNNewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069FAB6D19F9B8DB005AA98C /* AHNNewsListViewController.m */; };
+		069FAB7119F9BC0C005AA98C /* AHNNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 069FAB7019F9BC0C005AA98C /* AHNNews.m */; };
+		069FAB7419F9BC26005AA98C /* AHNNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069FAB7319F9BC26005AA98C /* AHNNewsViewController.m */; };
+		069FAB7719F9C166005AA98C /* AHNNewsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 069FAB7619F9C166005AA98C /* AHNNewsParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0669BB4B1A03CACF00DBFFAE /* AHNWebViewNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHNWebViewNewsViewController.h; sourceTree = "<group>"; };
+		0669BB4C1A03CACF00DBFFAE /* AHNWebViewNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHNWebViewNewsViewController.m; sourceTree = "<group>"; };
 		069FAB3A19F9B481005AA98C /* AppleHotNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleHotNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		069FAB3D19F9B481005AA98C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		069FAB3F19F9B481005AA98C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +55,14 @@
 		069FAB5E19F9B481005AA98C /* AppleHotNewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppleHotNewsTests-Info.plist"; sourceTree = "<group>"; };
 		069FAB6019F9B481005AA98C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		069FAB6219F9B481005AA98C /* AppleHotNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleHotNewsTests.m; sourceTree = "<group>"; };
+		069FAB6C19F9B8DB005AA98C /* AHNNewsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHNNewsListViewController.h; sourceTree = "<group>"; };
+		069FAB6D19F9B8DB005AA98C /* AHNNewsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHNNewsListViewController.m; sourceTree = "<group>"; };
+		069FAB6F19F9BC0C005AA98C /* AHNNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHNNews.h; sourceTree = "<group>"; };
+		069FAB7019F9BC0C005AA98C /* AHNNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHNNews.m; sourceTree = "<group>"; };
+		069FAB7219F9BC26005AA98C /* AHNNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHNNewsViewController.h; sourceTree = "<group>"; };
+		069FAB7319F9BC26005AA98C /* AHNNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHNNewsViewController.m; sourceTree = "<group>"; };
+		069FAB7519F9C166005AA98C /* AHNNewsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHNNewsParser.h; sourceTree = "<group>"; };
+		069FAB7619F9C166005AA98C /* AHNNewsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHNNewsParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +124,16 @@
 			children = (
 				069FAB4C19F9B481005AA98C /* AHNAppDelegate.h */,
 				069FAB4D19F9B481005AA98C /* AHNAppDelegate.m */,
+				069FAB7519F9C166005AA98C /* AHNNewsParser.h */,
+				069FAB7619F9C166005AA98C /* AHNNewsParser.m */,
+				069FAB6F19F9BC0C005AA98C /* AHNNews.h */,
+				069FAB7019F9BC0C005AA98C /* AHNNews.m */,
+				069FAB6C19F9B8DB005AA98C /* AHNNewsListViewController.h */,
+				069FAB6D19F9B8DB005AA98C /* AHNNewsListViewController.m */,
+				069FAB7219F9BC26005AA98C /* AHNNewsViewController.h */,
+				069FAB7319F9BC26005AA98C /* AHNNewsViewController.m */,
+				0669BB4B1A03CACF00DBFFAE /* AHNWebViewNewsViewController.h */,
+				0669BB4C1A03CACF00DBFFAE /* AHNWebViewNewsViewController.m */,
 				069FAB4F19F9B481005AA98C /* Images.xcassets */,
 				069FAB4419F9B481005AA98C /* Supporting Files */,
 			);
@@ -240,8 +265,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069FAB7419F9BC26005AA98C /* AHNNewsViewController.m in Sources */,
+				069FAB7119F9BC0C005AA98C /* AHNNews.m in Sources */,
+				0669BB4D1A03CACF00DBFFAE /* AHNWebViewNewsViewController.m in Sources */,
+				069FAB6E19F9B8DB005AA98C /* AHNNewsListViewController.m in Sources */,
 				069FAB4E19F9B481005AA98C /* AHNAppDelegate.m in Sources */,
 				069FAB4A19F9B481005AA98C /* main.m in Sources */,
+				069FAB7719F9C166005AA98C /* AHNNewsParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +320,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -329,7 +359,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -363,6 +393,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppleHotNews/AppleHotNews-Prefix.pch";
 				INFOPLIST_FILE = "AppleHotNews/AppleHotNews-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -376,6 +407,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppleHotNews/AppleHotNews-Prefix.pch";
 				INFOPLIST_FILE = "AppleHotNews/AppleHotNews-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -440,6 +472,7 @@
 				069FAB6819F9B481005AA98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		069FAB6919F9B481005AA98C /* Build configuration list for PBXNativeTarget "AppleHotNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +481,7 @@
 				069FAB6B19F9B481005AA98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

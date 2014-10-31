@@ -1,5 +1,5 @@
 //
-//  AHNAppDelegate.h
+//  AHNNewsListViewController.h
 //  AppleHotNews
 //
 //  Created by Seva Kukhelny on 24.10.14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AHNAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (retain, nonatomic) UIWindow *window;
+@interface AHNNewsListViewController : UITableViewController
 
 @end
