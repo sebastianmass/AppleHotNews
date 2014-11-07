@@ -119,6 +119,25 @@
     return [self.newsArray count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    AHNNews *news = self.newsArray[indexPath.row];
+
+    NSString *titleCellText = news.title;
+    NSString *descriptionCellText = news.description;
+    
+    UIFont *titleCellFont = [UIFont fontWithName:@"Helvetica" size:18.0];
+    UIFont *descriptionCellFont = [UIFont fontWithName:@"Helvetica" size:12.0];
+    
+    CGSize constraintSize = CGSizeMake(self.view.bounds.size.width - 50.0f, MAXFLOAT);
+    
+    CGSize titleLabelSize = [titleCellText sizeWithFont:titleCellFont constrainedToSize:constraintSize lineBreakMode:NSLineBreakByWordWrapping];
+    
+    CGSize descriptionLabelSize = [descriptionCellText sizeWithFont:descriptionCellFont constrainedToSize:constraintSize lineBreakMode:NSLineBreakByWordWrapping];
+
+    return titleLabelSize.height + descriptionLabelSize.height + 20;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString * const identifier = @"NewsCellIdentifier";
@@ -127,12 +146,18 @@
     
     if (cell == nil)
     {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier] autorelease];
     }
     
     AHNNews *news = self.newsArray[indexPath.row];
     
+    [cell.textLabel setNumberOfLines:0];
+    
+    [cell.detailTextLabel setNumberOfLines:0];
+    
     cell.textLabel.text = news.title;
+    
+    cell.detailTextLabel.text = news.description;
     
     return cell;
 }
